@@ -17,7 +17,9 @@ import org.springframework.context.annotation.ImportResource;
  * @Date: 2019/1/12 11:48
  **/
 @SpringBootApplication
-@ImportResource(value = {"classpath:spring/spring-jdbc.xml","classpath:spring/spring-dubbo.xml"})
+//@ImportResource(value = {"classpath:spring/spring-jdbc.xml","classpath:spring/spring-dubbo.xml"})
+@ImportResource(value = {"classpath:spring/spring-jdbc.xml"})
+
 @MapperScan(basePackages = "com.debug.mooc.dubbo.one.model.mapper")
 public class BootMoreApplication extends SpringBootServletInitializer {
 
@@ -31,6 +33,3 @@ public class BootMoreApplication extends SpringBootServletInitializer {
     }
 
 }
-
-
-
