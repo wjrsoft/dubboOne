@@ -31,7 +31,7 @@ public class BaseController {
     public BaseResponse one(@RequestParam String param){
         BaseResponse response=new BaseResponse(StatusCode.Success);
         try {
-            log.info("server收到请求参数:[{}]",param);
+            log.info("dubboOne server 收到请求参数:[{}]",param);
             response.setData(param);
 
         }catch (Exception e){
