@@ -45,7 +45,6 @@ public class DubboRecordService implements IDubboRecordService{
      * 下单服务
      * @param dto
      */
-    @Override
     @Path("push")
     @POST
     @Consumes(value = MediaType.APPLICATION_JSON)
